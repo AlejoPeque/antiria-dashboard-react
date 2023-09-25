@@ -1,0 +1,42 @@
+.containerMoviesTable {
+  padding: 1.5rem;
+}
+.moviesTableContainer {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+.headerFooter {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.headerFooter li {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+  text-align: start;
+  font-weight: bold;
+  color: #5a5c69;
+  background-color: #f8f9fc;
+}
+
+.tableGridRows {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.tableGridRows li {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #ececec;
+  text-align: start;
+}
