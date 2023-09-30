@@ -2,22 +2,22 @@ import React from 'react';
 import { Cards } from './index'
 
 
-export default function ContentRowMovies({usersCount, productInfo}) {
+export default function ContentRowMovies({userInfo, productInfo}) {
   return (
       <div className='row'>
           <Cards
             title = "User"
-            quantity = {usersCount}
+            quantity = {userInfo.user}
             color = "primary"
             icon = "fa-user" />
           <Cards
             title = "Products"
-            quantity = {productInfo.countByCategory.Producto}
+            quantity = {productInfo}
             color = "success"
             icon = "fa-ring" />
           <Cards
             title = "Visits"
-            quantity = {productInfo.countByCategory.Servicio}
+            quantity = {productInfo}
             color = "warning"
             icon = "fa-globe" />
       </div>

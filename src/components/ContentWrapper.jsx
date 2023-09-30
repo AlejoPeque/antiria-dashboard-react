@@ -1,29 +1,29 @@
-import React from 'react';
-import { TopBar, ContentRowTop, Footer, TableGrid } from './index'
+import React from "react";
+import { TopBar, ContentRowTop, Footer, TableGrid } from "./index";
 
-export default function ContentWrapper({userInfo, productInfo}) {
+export default function ContentWrapper({ userInfo, productInfo }) {
   return (
     <div id="content-wrapper" className="d-flex flex-column">
-        <div id='content'>
-              <TopBar />
-              
-              <ContentRowTop 
-                categories = {Object.keys(productInfo.countByCategory)} 
-                usersCount = {userInfo.count} 
-                productInfo = {productInfo}
-              />
+      <div id="content">
+        <TopBar />
 
-              <TableGrid 
-                data = {productInfo.products} 
-                header = {['id', 'name', 'description', 'detail', 'category']}
-              />
-              
-              <TableGrid 
-                data = {userInfo.users} 
-                header = {['id', 'name', 'email', 'detail']}
-              />
-        </div>
-              <Footer /> 
+        <ContentRowTop
+          categories={productInfo.products}
+          usersCount={userInfo.user}
+          productInfo={productInfo.products}
+        />
+
+        <TableGrid
+          data={productInfo}
+          header={["id", "name", "description", "detail", "category"]}
+        />
+
+        <TableGrid
+          data={userInfo}
+          header={["id", "name", "email", "detail"]}
+        />
+      </div>
+      <Footer />
     </div>
   );
 }
