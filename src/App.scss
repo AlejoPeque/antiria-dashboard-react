@@ -1,0 +1,94 @@
+$light: #FFFF;
+$grey: #e7e9eb;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+}
+
+.navbar{
+    background-color: $light;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $grey;
+}
+
+
+.containerTablas{
+    .container{
+        margin-bottom: 2rem;
+    }
+    .tablaName{
+        margin: 0;
+    }
+    .col{
+        border: 1px solid $grey;
+    }
+    .colTitle{
+        background-color: #fafafa;
+        font-weight: bold;
+    }
+}
+
+.containerPages{
+    margin-top: 1rem;
+}
+
+
+.containerInfoGen{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding: 1rem;
+    div{
+        background-color: rgb(66, 66, 187);
+        padding: 10px 2rem;
+        border-radius: 20px;
+        display: flex;
+        color: #e7e9eb;
+        align-items: center;
+        gap: 2rem;
+        p{
+            display: flex;
+            margin: 0;
+            align-items: center;
+        }
+    }
+
+}
+
+.sidebar {
+    width: 20rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid $grey;
+    .centrarMenu{
+        display: flex;
+        align-items: center;
+    }
+    ul{
+        list-style: none;
+        padding: 1rem 2rem;
+        li{
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                &.active{
+                    background-color: $grey;
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
