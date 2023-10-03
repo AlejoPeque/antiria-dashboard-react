@@ -1,5 +1,5 @@
 import React from "react";
-import TableProducts from '../Table/TableProducts';
+import TableProducts from "../Table/TableProducts";
 
 const Products = ({ productInfo }) => {
   return (
@@ -16,9 +16,10 @@ const Products = ({ productInfo }) => {
             <div className="col colTitle">id_marca</div>
             <div className="col colTitle">id_categoria</div>
           </div>
-          {productInfo.map((product, index) => (
-            <TableProducts key={index} productInfo={product} />
-          ))}
+          {Array.isArray(productInfo) &&
+            productInfo.map((product, index) => (
+              <TableProducts key={index} productInfo={product} />
+            ))}
         </div>
       </div>
     </div>
@@ -26,4 +27,3 @@ const Products = ({ productInfo }) => {
 };
 
 export default Products;
-

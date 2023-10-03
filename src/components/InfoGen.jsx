@@ -24,7 +24,7 @@ const InfoGen = ({userInfo, productInfo, categoriaInfo}) => {
         <div>
           <p>
             <FaIcons.FaChessBoard className="me-2" />
-            Categorias
+            Categories
           </p>
           <p>{categoriaInfo.length}</p>
         </div>

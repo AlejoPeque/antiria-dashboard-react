@@ -11,9 +11,10 @@ const Categories = ({ categoriaInfo }) => {
             <div className="col colTitle">id</div>
             <div className="col colTitle">nombre</div>
           </div>
-          {categoriaInfo.map((categoria, index) => (
-            <TableCategories key={index} categoriaInfo={categoria} />
-          ))}
+          {Array.isArray(categoriaInfo) &&
+            categoriaInfo.map((categoria, index) => (
+              <TableCategories key={index} categoriaInfo={categoria} />
+            ))}
         </div>
       </div>
     </div>

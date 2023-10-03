@@ -14,9 +14,10 @@ const Users = ({ userInfo }) => {
             <div className="col colTitle">email</div>
             <div className="col colTitle">avatar</div>
           </div>
-          {userInfo.map((user, index) => (
-            <TableUsers key={index} userInfo={user} />
-          ))}
+          {Array.isArray(userInfo) &&
+            userInfo.map((user, index) => (
+              <TableUsers key={index} userInfo={user} />
+            ))}
         </div>
       </div>
     </div>
