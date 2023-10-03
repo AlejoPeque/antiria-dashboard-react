@@ -5,7 +5,7 @@ const InfoGen = ({userInfo, productInfo, categoriaInfo}) => {
   console.log(productInfo)
   console.log(categoriaInfo)
   return (
-    <>
+    <div className="contenedorPages">
       <div className="containerInfoGen">
         <div>
           <p>
@@ -29,7 +29,7 @@ const InfoGen = ({userInfo, productInfo, categoriaInfo}) => {
           <p>{categoriaInfo.length}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

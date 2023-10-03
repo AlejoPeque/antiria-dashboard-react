@@ -19,7 +19,7 @@ function Navbar2(args) {
   return (
     <div>
       <Navbar {...args}>
-        <NavbarBrand href="/">Dashboard - Antiria</NavbarBrand>
+        <NavbarBrand href="/" className='colorNav'>Dashboard - Antiria</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>

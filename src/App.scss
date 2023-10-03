@@ -22,25 +22,32 @@ body {
     background-color: $light;
     padding: 1rem 2rem;
     border-bottom: 1px solid $grey;
+    position: fixed !important;
+    width: 100vw;
+    .container-fluid{
+        width: 98%;
+    }
 }
 
 
 .containerTablas{
     .container{
         margin-bottom: 2rem;
-        box-shadow: 0px 0px 10px #0000001c;
-        border-radius: 10px;
         overflow: hidden;
     }
     .tablaName{
         margin: 0;
+        padding: 5px;
     }
     .col{
-        border: 1px solid $grey;
+        border-bottom: 1px solid $grey;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
     }
     .colTitle{
-        background-color: #fafafa;
         font-weight: bold;
+        font-style: italic;
     }
 }
 
@@ -56,7 +63,6 @@ body {
     padding: 1rem;
     div{
         background-color: rgb(66, 66, 187);
-        box-shadow: 0px 0px 10px #0000006b;
         padding: 10px 2rem;
         border-radius: 20px;
         display: flex;
@@ -72,10 +78,37 @@ body {
 
 }
 
+.imgUser{
+    width: 50px !important;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.admin{
+    color: rgb(98, 167, 98);
+}
+
+.user{
+    color: rgb(117, 159, 194);
+}
+
+.contenedorPages{
+    margin-left: 20rem;
+    margin-top: 4rem;
+}
+
 .sidebar {
     width: 20rem;
     height: calc(100vh - 52px);
     border-right: 1px solid $grey;
+    position: fixed;
+    top: 52px;
     .centrarMenu{
         display: flex;
         align-items: center;

@@ -3,7 +3,7 @@ import "./App.css";
 
 //Components
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/SideBar";
 
 //Pages
 import Home from "./pages/Home";
